@@ -1,0 +1,44 @@
+/* Hero de bienvenida */
+.hero-welcome {
+  position: relative;
+  background: url('https://mandolina.co/wp-content/uploads/2021/03/610747100-1.jpg') no-repeat center center/cover;
+  height: 80vh;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+/* Contenido centrado */
+.hero-welcome .content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+/* Responsive text */
+.hero-welcome h1 {
+  font-size: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .hero-welcome h1 {
+    font-size: 3.5rem;
+  }
+}
+
+.about-section {
+  height: 90vh; 
+}
+.about-section h2 {
+  color: #b02a37;
+  font-weight: bold;
+}
+
+.about-section p {
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.about-section img {
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}

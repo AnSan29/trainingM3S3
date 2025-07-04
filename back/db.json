@@ -1,0 +1,116 @@
+{
+  "productos": [
+    {
+      "id": "1",
+      "name": "Hamburguesa Pollo",
+      "price": 15000,
+      "status": true,
+      "stock": 200
+    },
+    {
+      "id": "2",
+      "name": "Hamburguesa Carne",
+      "price": 18000,
+      "status": true,
+      "stock": 180
+    },
+    {
+      "id": "3",
+      "name": "Perro Suizo",
+      "price": 18000,
+      "status": false,
+      "stock": 0
+    },
+    {
+      "id": "4",
+      "name": "Perro Sencillo",
+      "price": 8000,
+      "status": true,
+      "stock": 150
+    },
+    {
+      "id": "5",
+      "name": "Combo Doble Hamburguesa",
+      "price": 28000,
+      "status": true,
+      "stock": 100
+    },
+    {
+      "id": "6",
+      "name": "Hamburguesa BBQ",
+      "price": 19000,
+      "status": true,
+      "stock": 90
+    },
+    {
+      "id": "7",
+      "name": "Perro Especial con Tocineta",
+      "price": 16000,
+      "status": true,
+      "stock": 110
+    },
+    {
+      "name": "Salchipapa Mixta",
+      "price": "13000",
+      "status": false,
+      "stock": 0,
+      "id": "8"
+    },
+    {
+      "id": "9",
+      "name": "Papas con Queso y Tocineta",
+      "price": 10000,
+      "status": true,
+      "stock": 130
+    },
+    {
+      "id": "10",
+      "name": "Gaseosa 400ml",
+      "price": 3000,
+      "status": true,
+      "stock": 300
+    },
+    {
+      "id": "11",
+      "name": "Agua sin gas",
+      "price": 2000,
+      "status": true,
+      "stock": 200
+    },
+    {
+      "id": "12",
+      "name": "Hamburguesa Vegana",
+      "price": 17000,
+      "status": false,
+      "stock": 0
+    },
+    {
+      "id": "13",
+      "name": "Perro Vegano",
+      "price": 15000,
+      "status": true,
+      "stock": 50
+    },
+    {
+      "id": "14",
+      "name": "Combo Familiar",
+      "price": 45000,
+      "status": true,
+      "stock": 30
+    },
+    {
+      "id": "15",
+      "name": "Nuggets de Pollo (6 unidades)",
+      "price": 9000,
+      "status": true,
+      "stock": 100
+    },
+    {
+      "id": "16",
+      "name": "Papas a la Francesa",
+      "price": 7000,
+      "status": true,
+      "stock": 250
+    }
+  ]
+}
