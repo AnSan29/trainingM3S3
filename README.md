@@ -23,7 +23,7 @@ Este proyecto consiste en una aplicación CRUD para gestionar productos de comid
 
 ### Clonar el repositorio
 ```bash
-git clone https://github.com/usuario/tu-repo.git
+git clone https://github.com/AnSan29/trainingM3S3.git
 cd trainingM3S3
 ```
 ---
