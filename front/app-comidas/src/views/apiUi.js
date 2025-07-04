@@ -62,6 +62,7 @@ export default function ApiUi() {
               >
                 <thead class="table-primary">
                   <tr>
+                    <th>Id</th>
                     <th>Nombre</th>
                     <th>Precio</th>
                     <th>Stock</th>
@@ -74,11 +75,12 @@ export default function ApiUi() {
             </div>
           </div>
         </div>
-      </article>
+      <Activo/article>
     </section>
 
     <template id="crud-template">
     <tr>
+      <td class="id">id</td>
       <td class="name">name</td>
       <td class="price">price</td>
       <td class="stock">stock</td>
@@ -130,14 +132,16 @@ export function apiUiController() {
       // valido si la respuesta no es ok, de ser asi lanzo el error al catch como un objeto con dos variables
       if (!res.ok) throw { status: res.status, statusText: res.statusText };
 
-      console.log(json);
+      // re-ordeno mi json para mostrar primero el ultimo elemento añadido
+      let jsonInvertido = json.slice().reverse();
 
-      json.forEach((el) => {
+      jsonInvertido.forEach((el) => {
         //pintamos valores del elemento en nuestra plantilla
+        $template.querySelector(".id").textContent = el.id;
         $template.querySelector(".name").textContent = el.name;
         $template.querySelector(".price").textContent = el.price;
-
         $template.querySelector(".stock").textContent = el.stock;
+
         if (el.status) {
           $template.querySelector(".status").textContent = "Activo";
         } else {
@@ -259,7 +263,7 @@ export function apiUiController() {
   d.addEventListener("click", async (e) => {
     // btn edit
     if (e.target.matches(".edit")) {
-      $title.textContent = "Editar Santo";
+      $title.textContent = "Editar Producto";
       $form.nombre.value = e.target.dataset.name;
       $form.precio.value = e.target.dataset.price;
       $form.id.value = e.target.dataset.id;
@@ -267,7 +271,7 @@ export function apiUiController() {
     // btn delete
     if (e.target.matches(".delete")) {
       let isDelete = confirm(
-        `Estas seguro de eliminar el id ${e.target.dataset.id} ?`
+        `Estas seguro de eliminar el producto: ${e.target.dataset.name} ?`
       );
 
       if (isDelete) {

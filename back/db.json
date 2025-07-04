@@ -111,6 +111,27 @@
       "price": 7000,
       "status": true,
       "stock": 250
+    },
+    {
+      "name": "sopa de tomate",
+      "price": "2300",
+      "status": true,
+      "stock": 200,
+      "id": "5cfa"
+    },
+    {
+      "name": "arroz cerdos",
+      "price": "30",
+      "status": false,
+      "stock": 0,
+      "id": "d54a"
+    },
+    {
+      "id": "b974",
+      "name": "mari",
+      "price": "33",
+      "status": true,
+      "stock": 200
     }
   ]
 }
