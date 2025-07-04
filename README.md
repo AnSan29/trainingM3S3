@@ -30,7 +30,7 @@ cd trainingM3S3
 ## Iniciar el backend (JSON Server)
 ```bash
 cd back
-json-server --watch db.json --port 5555
+json-server --watch db.json --port 5000
 ```
 ---
 
@@ -42,7 +42,7 @@ npm run dev
 ```
 Asegúrate de que el backend esté corriendo en 
 ```bash
-http://localhost:5555
+http://localhost:5000
 ```
 
 ## 📁 Estructura del proyecto
